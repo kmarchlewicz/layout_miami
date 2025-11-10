@@ -1,0 +1,45 @@
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+
+  &--second {
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #1B2129;
+  }
+
+  &--third {
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #1B2129;
+    padding: 24px 0 8px 0;
+  }
+
+    &--fourth {
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #1B2129;
+  }
+
+  &--fifth {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #9393A3;
+    padding-bottom: 8px;
+  }
+}
+
+.title--second, .title--fourth {
+  grid-column: 1 / -1;
+}

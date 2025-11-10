@@ -1,22 +1,183 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Miami</title>
-    <link
-      rel="stylesheet"
-      href="src/styles/main.scss"
-    />
-    <script
-      src="src/scripts/main.js"
-      defer
-    ></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miami Condo Kings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>Miami</h1>
+    <header class="header" id="#header">
+      <nav class="navigation">
+        <div class="navigation__logo">
+          <a class="navigation__item" href=""><img src="logo.png" class="navigation__img" alt="Bang & Olufsen logo" /></a>
+        </div>
+        <div class="navigation__icons">
+          <a class="navigation__item" href=""><img src="icon-phone.svg" class="navigation__icon" alt="Call us" /></a>
+          <a class="navigation__item" href="#menu"><img src="icon-menu.svg" class="navigation__icon" alt="Open menu" /></a>
+        </div>
+      </nav>
+      <h1 class="title">Your senses.<br>Set free.</h1>
+    </header>
+
+    <div class="menu" id="menu">
+      <nav class="navigation">
+        <div class="navigation__logo">
+          <a class="navigation__item" href=""><img src="logo.png" class="navigation__img" alt="Bang & Olufsen logo" /></a>
+        </div>
+        <div class="navigation__icons">
+          <a class="navigation__item navigation__item--hidden" href=""><img src="icon-phone.svg" class="navigation__icon" alt="Call us" /></a>
+          <a class="navigation__item" href="#header"><img src="icon-close.svg" class="navigation__icon" alt="Open menu" /></a>
+        </div>
+      </nav>
+
+      <nav class="links menu__links">
+        <ul class="links__list">
+          <li class="links__item"><a href="#recommended" class="links__link">Recommended</a></li>
+          <li class="links__item"><a href="#categories" class="links__link">Categories</a></li>
+          <li class="links__item"><a href="#about-us" class="links__link">About Us</a></li>
+          <li class="links__item"><a href="#contact-us" class="links__link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <p class="menu__paragraph">+1 234 5555-55-55</p>
+      <p class="menu__paragraph">
+        <a class="menu__call-link" href="">call to order</a>
+      </p>
+    </div>
+
+    <main class="main" id="recommended">
+      <section class="section">
+        <h2 class="title title--second main__title">Recommended</h2>
+        <article class="article">
+          <img class="article__picture" src="product-1.jpg" alt="Beosound A5 speaker" />
+          <h3 class="title title--third">Beosound A5</h3>
+          <p class="article__description">
+            Huge sound anywhere – in the home or outdoors.
+            Beosound A5 is a Wi-Fi and Bluetooth speaker
+            with long-lasting battery and wireless charging built in.
+          </p>
+          <p class="article__price">1299.00</p>
+        </article>
+
+        <article class="article">
+          <img class="article__picture" src="product-2.jpg" alt="Beoplay HS headphones" />
+          <h3 class="title title--third">Beoplay HX</h3>
+          <p class="article__description">
+            Wireless noise-cancelling headphones.
+            Listen in comfort whether you're on a call,
+            working from home or taking a moment for yourself.
+          </p>
+          <p class="article__price">499.00</p>
+        </article>
+
+        <article class="article article--last">
+          <img class="article__picture" src="product-3.jpg" alt="Beosound Theatre soundbarv" />
+          <h3 class="title title--third">Beosound Theatre</h3>
+          <p class="article__description">
+            Four patent-pending acoustic innovations
+            in one sleek soundbar envelop you in sound
+            from every angle. Made to fit any TV,
+            and last for generations.
+          </p>
+          <p class="article__price">3199.00</p>
+        </article>
+      </section>
+
+      <section class="picks" id="categories">
+        <h2 class="title title--second">Sound. Vision.<br>It's your pick.</h2>
+
+        <article class="pick">
+          <img class="pick__picture" src="pick-1.jpg" alt="Portable speaker 1" />
+        </article>
+        <article class="pick">
+          <img class="pick__picture" src="pick-2.jpg" alt="Portable speaker 2" />
+        </article>
+        <h4 class="title title--fourth picks__title">Portable speakers</h4>
+
+        <article class="pick">
+          <img class="pick__picture" src="pick-3.jpg" alt="Earphone 1" />
+        </article>
+        <article class="pick">
+          <img class="pick__picture" src="pick-4.jpg" alt="Earphone 2" />
+        </article>
+        <h4 class="title title--fourth picks__title">Earphones</h4>
+
+        <article class="pick">
+          <img class="pick__picture" src="pick-5.jpg" alt="Smart Home 1" />
+        </article>
+        <article class="pick">
+          <img class="pick__picture" src="pick-6.jpg" alt="Smart Home 2" />
+        </article>
+        <h4 class="title title--fourth picks__title">Smart Home</h4>
+
+        <a class="button button--full" href="">View all</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+
+      <section class="classics-program classics-program--first" id="about-us">
+        <article class="classics-program__picture"></article>
+        <article class="classics-program__info">
+          <h2 class="title title--second classics-program__title">Timeless, for 50 years and<br> counting</h2>
+          <p class="classics-program__description">
+            Bang & Olufsen is expanding its Recreated Classics Program
+            with the launch of Beosystems – a limited edition music system
+            that transcends time by bridging the gap between
+            one of our iconic designs from 1972 and
+            today’s cutting-edge digital technology.
+          </p>
+        </article>
+      </section>
+
+      <section class="contact" id="contact-us">
+        <h2 class="title title--second contact__title">Contact Us</h2>
+        <form class="form">
+          <div class="form__item">
+            <label for="name" class="form__label">Name</label>
+            <input id="name" class="form__input" type="text" placeholder="Name">
+          </div>
+
+          <div class="form__item">
+            <label for="email" class="form__label">Email</label>
+            <input id="email" class="form__input" type="email" placeholder="Email">
+          </div>
+
+          <div class="form__item form__item--last">
+            <label for="message" class="form__label">Message</label>
+            <textarea id="message" class="form__textarea" placeholder="Message"></textarea>
+          </div>
+
+          <button class="button button--full">Send</button>
+        </form>
+
+        <address class="address">
+          <div class="address__data">
+            <h3 class="title title--fifth">Phone</h3>
+            <p>+1 234 5555-55-55</p>
+          </div>
+
+          <div class="address__data">
+            <h3 class="title title--fifth">Email</h3>
+            <p>hello@bang&olufsen.com</p>
+          </div>
+
+          <div class="address__data">
+            <h3 class="title title--fifth">Address</h3>
+            <p>
+              400 first ave.<br>
+              suite 700<br>
+              Minneapolis, MN 55401
+            </p>
+          </div>
+        </address>
+      </section>
+
+    </footer>
+
   </body>
 </html>

@@ -1,0 +1,25 @@
+.button {
+  height: 56px;
+  border-radius: 8px;
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 56px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  background-color: #F98921;
+  border: 0;
+
+  &:hover {
+    background-color: #1B2129;
+  }
+
+  &:active {
+    background-color: #010810;
+  }
+
+  &--full {
+    grid-column: 1 / -1;
+  }
+}

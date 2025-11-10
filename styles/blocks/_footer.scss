@@ -1,0 +1,46 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0px 0 64px;
+  box-sizing: border-box;
+}
+
+.classics-program {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #FCFAEF;
+
+  &--first {
+    margin-bottom: 64px;
+  }
+
+  
+  &__picture {
+    background-image: url('classics.jpg');
+    background-repeat: no-repeat;
+    height: 200px;
+    padding-bottom: 40px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__info {
+    padding: 0 20px 48px;
+    box-sizing: border-box;
+  }
+
+  &__description {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.15px;
+    color: #1B2129;
+  }
+}
+
+.address__data:not(:last-of-type) {
+  padding-bottom: 24px;
+}
