@@ -1,18 +1,18 @@
 .button {
   height: 56px;
   border-radius: 8px;
-  font-family: Manrope;
+  font-family: Manrope, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 56px;
   text-decoration: none;
   text-align: center;
   color: #fff;
-  background-color: #F98921;
+  background-color: #f98921;
   border: 0;
 
   &:hover {
-    background-color: #1B2129;
+    background-color: #1b2129;
   }
 
   &:active {

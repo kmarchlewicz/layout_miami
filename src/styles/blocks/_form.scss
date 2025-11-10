@@ -9,7 +9,7 @@
 }
 
 .contact {
-  padding: 0 20px 0px;
+  padding: 0 20px;
   box-sizing: border-box;
 
   &__title {
@@ -31,39 +31,38 @@
   }
 
   &__input {
-    background-color: #F9F9F9;
+    background-color: #f9f9f9;
     height: 48px;
-    line-height: 48px;
     border: 0;
     border-radius: 8px;
     width: 100%;
     padding-left: 16px;
     box-sizing: border-box;
-    font-family: Manrope;
+    font-family: Manrope, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
-    color: #1B2129;
+    color: #1b2129;
+
+    &::placeholder {
+      color: #7e7e83;
+    }
 
     &:hover {
-      outline: 1px solid #DBDBDB;
+      outline: 1px solid #dbdbdb;
 
       &::placeholder {
-        color: #1B2129;
+        color: #1b2129;
       }
     }
 
     &:focus {
-      outline: 2px solid #F98921;
-    }
-
-    &::placeholder {
-      color: #7E7E83;
+      outline: 2px solid #f98921;
     }
   }
 
   &__textarea {
-    background-color: #F9F9F9;
+    background-color: #f9f9f9;
     height: 148px;
     border: 0;
     border-radius: 8px;
@@ -72,36 +71,38 @@
     padding-top: 14px;
     padding-bottom: 32px;
     box-sizing: border-box;
-    font-family: Manrope;
+    font-family: Manrope, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
-    color: #1B2129;
+    color: #1b2129;
+
+    &::placeholder {
+      font-family: Manrope, sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 0.15px;
+      color: #7e7e83;
+    }
 
     &:hover {
-      outline: 1px solid #DBDBDB;
+      outline: 1px solid #dbdbdb;
 
       &::placeholder {
-        color: #1B2129;
+        color: #1b2129;
       }
     }
 
     &:focus {
-      outline: 2px solid #F98921;
-    }
-    
-    &::placeholder {
-      font-family: Manrope;
-      font-weight: 400;
-      font-size: 14px;
-      letter-spacing: 0.15px;
-      color: #7E7E83;
+      outline: 2px solid #f98921;
     }
   }
 
+  /*
   &__label {
     &:not(:focus):not(:active) {
       @include visually-hidden;
     }
   }
+  */
 }
