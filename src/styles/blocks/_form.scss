@@ -8,7 +8,7 @@
   width: 1px;
 }
 
-.contact {
+.contact-us {
   padding: 0 20px;
   box-sizing: border-box;
 
@@ -17,7 +17,7 @@
   }
 }
 
-.form {
+.contact-form {
   display: flex;
   flex-direction: column;
   padding-bottom: 48px;
@@ -98,11 +98,9 @@
     }
   }
 
-  /*
   &__label {
     &:not(:focus):not(:active) {
       @include visually-hidden;
     }
   }
-  */
 }

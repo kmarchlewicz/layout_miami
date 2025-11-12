@@ -4,10 +4,12 @@
 @use './blocks/header';
 @use './blocks/main';
 @use './blocks/article';
-@use './blocks/picks';
+@use './blocks/categories';
 @use './blocks/button';
 @use './blocks/footer';
 @use './blocks/form';
 @use './blocks/navigation';
 @use './blocks/menu';
 @use './blocks/links';
+@use './blocks/recommended';
+@use './blocks/about-us';

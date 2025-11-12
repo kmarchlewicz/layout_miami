@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="header" id="#header">
+    <header class="header" id="header">
       <nav class="navigation">
         <div class="navigation__logo">
           <a class="navigation__item" href="">
@@ -93,10 +93,10 @@
       </p>
     </div>
 
-    <main class="main" id="recommended">
-      <section class="section">
-        <h2 class="title title--second main__title">Recommended</h2>
-        <article class="article">
+    <main class="main">
+      <section class="recommended" id="recommended">
+        <h2 class="title title--second recommended__title">Recommended</h2>
+        <article class="recommended__article article">
           <img
             class="article__picture"
             src="/src/images/photos/product-1.jpg"
@@ -111,7 +111,7 @@
           <p class="article__price">1299.00</p>
         </article>
 
-        <article class="article">
+        <article class="recommended__article article">
           <img
             class="article__picture"
             src="/src/images/photos/product-2.jpg"
@@ -126,7 +126,7 @@
           <p class="article__price">499.00</p>
         </article>
 
-        <article class="article article--last">
+        <article class="recommended__article article article--last">
           <img
             class="article__picture"
             src="/src/images/photos/product-3.jpg"
@@ -143,62 +143,71 @@
         </article>
       </section>
 
-      <section class="picks" id="categories">
-        <h2 class="title title--second picks__title">Sound. Vision.<br>It's your pick.</h2>
+      <section class="categories" id="categories">
+        <h2 class="title title--second categories__title">Sound. Vision.<br>It's your pick.</h2>
 
-        <article class="pick">
-          <img
-            class="pick__picture"
-            src="/src/images/photos/pick-1.jpg"
-            alt="Portable speaker 1" />
-        </article>
-        <article class="pick">
-          <img
-            class="pick__picture"
-            src="/src/images/photos/pick-2.jpg"
-            alt="Portable speaker 2" />
-        </article>
-        <h4 class="title title--fourth picks__title">Portable speakers</h4>
+        <div class="categories__group">
+          <article class="categories__item">
+            <img
+              class="categories__item-picture"
+              src="/src/images/photos/category-1.jpg"
+              alt="Portable speaker 1"
+            />
+          </article>
+          <article class="categories__item">
+            <img
+              class="categories__item-picture"
+              src="/src/images/photos/category-2.jpg"
+              alt="Portable speaker 2"
+            />
+          </article>
+          <h4 class="title title--fourth">Portable speakers</h4>
+        </div>
 
-        <article class="pick">
-          <img
-            class="pick__picture"
-            src="/src/images/photos/pick-3.jpg"
-            alt="Earphone 1" />
-        </article>
-        <article class="pick">
-          <img
-            class="pick__picture"
-            src="/src/images/photos/pick-4.jpg"
-            alt="Earphone 2" />
-        </article>
-        <h4 class="title title--fourth picks__title">Earphones</h4>
+        <div class="categories__group">
+          <article class="categories__item">
+            <img
+              class="categories__item-picture"
+              src="/src/images/photos/category-3.jpg"
+              alt="Earphone 1"
+            />
+          </article>
+          <article class="categories__item">
+            <img
+              class="categories__item-picture"
+              src="/src/images/photos/category-4.jpg"
+              alt="Earphone 2"
+            />
+          </article>
+          <h4 class="title title--fourth">Earphones</h4>
+        </div>
 
-        <article class="pick">
-          <img
-            class="pick__picture"
-            src="/src/images/photos/pick-5.jpg"
-            alt="Smart Home 1" />
-        </article>
-        <article class="pick">
-          <img
-            class="pick__picture"
-            src="/src/images/photos/pick-6.jpg"
-            alt="Smart Home 2" />
-        </article>
-        <h4 class="title title--fourth picks__title">Smart Home</h4>
+        <div class="categories__group">
+          <article class="categories__item">
+            <img
+              class="categories__item-picture"
+              src="/src/images/photos/category-5.jpg"
+              alt="Smart Home 1"
+            />
+          </article>
+          <article class="categories__item">
+            <img
+              class="categories__item-picture"
+              src="/src/images/photos/category-6.jpg"
+              alt="Smart Home 2"
+            />
+          </article>
+          <h4 class="title title--fourth">Smart Home</h4>
+        </div>
 
         <a class="button button--full" href="">View all</a>
       </section>
-    </main>
 
-    <footer class="footer">
-
-      <section class="classics-program classics-program--first" id="about-us">
-        <article class="classics-program__picture"></article>
-        <article class="classics-program__info">
-          <h2 class="title title--second classics-program__title">Timeless, for 50 years and<br> counting</h2>
-          <p class="classics-program__description">
+      <section class="about-us about-us--first" id="about-us">
+        <article class="about-us__picture"></article>
+        <article class="about-us__info">
+          <h2 class="title title--second about-us__title">Timeless, for 50 years and<br> counting</h2>
+          <p class="about-us__description">
             Bang & Olufsen is expanding its Recreated Classics Program
             with the launch of Beosystems – a limited edition music system
             that transcends time by bridging the gap between
@@ -208,32 +217,35 @@
         </article>
       </section>
 
-      <section class="contact" id="contact-us">
-        <h2 class="title title--second contact__title">Contact Us</h2>
-        <form class="form">
-          <div class="form__item">
-            <label for="name" class="form__label">Name</label>
+    </main>
+
+    <footer class="footer">
+      <section class="contact-us" id="contact-us">
+        <h2 class="title title--second contact-us__title">Contact Us</h2>
+        <form class="contact-form">
+          <div class="contact-form__item">
+            <label for="name" class="contact-form__label">Name</label>
             <input
               id="name"
-              class="form__input"
+              class="contact-form__input"
               type="text"
               placeholder="Name">
           </div>
 
-          <div class="form__item">
-            <label for="email" class="form__label">Email</label>
+          <div class="contact-form__item">
+            <label for="email" class="contact-form__label">Email</label>
             <input
               id="email"
-              class="form__input"
+              class="contact-form__input"
               type="email"
               placeholder="Email">
           </div>
 
-          <div class="form__item form__item--last">
-            <label for="message" class="form__label">Message</label>
+          <div class="contact-form__item contact-form__item--last">
+            <label for="message" class="contact-form__label">Message</label>
             <textarea
               id="message"
-              class="form__textarea"
+              class="contact-form__textarea"
               placeholder="Message">
             </textarea>
           </div>
