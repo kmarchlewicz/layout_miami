@@ -1,11 +1,18 @@
+@mixin full-width-child {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
 .about-us {
   display: grid;
   grid-template-columns: 1fr;
   background-color: #fcfaef;
 
-  &--first {
-    margin-bottom: 64px;
-  }
+  @include full-width-child;
 
   &__picture {
     background-image: url('src/images/sections/classics.jpg');
