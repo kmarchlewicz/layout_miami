@@ -1,8 +1,9 @@
 .header {
   background-color: white;
-  background-image: url('src/images/sections/header-background.jpg');
+  background-image: url('src/images/sections/header.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
