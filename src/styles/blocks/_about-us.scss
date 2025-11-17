@@ -9,7 +9,7 @@
 
 .about-us {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(280px, 1fr);
   background-color: #fcfaef;
 
   @include full-width-child;

@@ -1,6 +1,6 @@
 .article {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(280px, 1fr);
   padding-bottom: 40px;
 
   &__item {
