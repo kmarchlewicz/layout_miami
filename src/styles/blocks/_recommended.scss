@@ -1,3 +1,7 @@
-.recommended__title {
-  margin-bottom: 48px;
+@use '../utils/mixins' as *;
+
+.recommended {
+  @include grid;
+
+  grid-template-columns: minmax(280px, 1fr);
 }

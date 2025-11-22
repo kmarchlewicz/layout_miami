@@ -1,4 +1,8 @@
+@use '../utils/mixins' as *;
+
 .categories {
+  @include grid;
+
   margin-bottom: 96px;
 
   &__title {
@@ -7,9 +11,12 @@
 
   &__group {
     margin-bottom: 40px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-column: span 2;
     gap: 16px 20px;
+
+    @include for-desktop {
+      grid-column: span 6;
+    }
   }
 
   &__item {

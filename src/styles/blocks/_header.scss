@@ -15,18 +15,9 @@
   padding: 0 20px 40px;
   box-sizing: border-box;
 
-  display: grid;
-  justify-content: center;
-
-  grid-template-columns: repeat(2, 130px);
   grid-template-rows: 1fr 1fr;
-  gap: 20px;
 
-  @include for-desktop {
-    grid-template-columns: repeat(12, 63px);
-    grid-template-rows: 1fr 1fr;
-    gap: 24px;
-  }
+  @include grid;
 
   &__navigation {
     align-self: start;
@@ -47,5 +38,4 @@
       grid-column: 1 / 13;
     }
   }
-
 }
