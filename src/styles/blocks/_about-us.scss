@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 @mixin full-width-child {
   width: 100vw;
   position: relative;
@@ -8,7 +10,8 @@
 }
 
 .about-us {
-  display: grid;
+  @include grid;
+
   grid-template-columns: minmax(280px, 1fr);
   background-color: #fcfaef;
 
@@ -21,15 +24,32 @@
     background-position: center top -8px;
     min-height: 200px;
     margin-bottom: 48px;
+
+    @include for-desktop {
+      min-height: 460px;
+      background-position: center bottom -155px;
+      grid-column: 1 / -1;
+    }
   }
 
   &__title {
     margin-bottom: 24px;
+
+
+    @include for-desktop {
+      grid-column: span 7;
+    }
   }
 
   &__info {
     padding: 0 20px 48px;
     box-sizing: border-box;
+
+    @include grid;
+
+    @include for-desktop {
+      grid-column: 1 / -1;
+    }
   }
 
   &__description {
@@ -39,5 +59,11 @@
     line-height: 140%;
     letter-spacing: 0.15px;
     color: #1b2129;
+    grid-column: 1 / -1;
+
+    @include for-desktop {
+      grid-column: span 5;
+      justify-self: end;
+    }
   }
 }
