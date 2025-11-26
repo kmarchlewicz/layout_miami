@@ -3,20 +3,30 @@
 .burger {
   &::before {
     content: '';
-    background-image: url(src/images/menu.svg);
+    background-image: url(src/images/burger.svg);
     background-size: cover;
     display: inline-block;
     width: 18px;
     height: 12px;
+
+    @include for-desktop {
+      width: 24px;
+      height: 16px;
+    }
   }
 
   &::after {
     content: '';
-    background-image: url(src/images/menu-hover.svg);
+    background-image: url(src/images/burger-hover.svg);
     background-size: cover;
     display: none;
     width: 18px;
     height: 12px;
+
+    @include for-desktop {
+      width: 24px;
+      height: 16px;
+    }
   }
 
   &:hover {
