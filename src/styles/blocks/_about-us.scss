@@ -15,9 +15,9 @@
   grid-template-columns: minmax(280px, 1fr);
   background-color: #fcfaef;
 
-   @include for-desktop {
+  @include for-desktop {
     grid-template-columns: minmax(280px, 1fr);
-   }
+  }
 
   @include full-width-child;
 
@@ -38,7 +38,6 @@
 
   &__title {
     margin-bottom: 24px;
-
 
     @include for-desktop {
       grid-column: span 7;
