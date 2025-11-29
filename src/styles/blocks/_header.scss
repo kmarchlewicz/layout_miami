@@ -19,6 +19,10 @@
 
   @include grid;
 
+  @include for-desktop {
+    padding-bottom: 64px;
+  }
+
   &__navigation {
     align-self: start;
     grid-column: 1 / 3;

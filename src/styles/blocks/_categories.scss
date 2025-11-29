@@ -5,8 +5,16 @@
 
   margin-bottom: 96px;
 
+  @include for-desktop {
+    margin-bottom: 120px;
+  }
+
   &__title {
     margin-bottom: 47px;
+
+    @include for-desktop {
+      margin-bottom: 32px; // to be combined with grid gap
+    }
   }
 
   &__group {
@@ -18,10 +26,12 @@
 
     @include for-desktop {
       grid-column: 1 / -1;
+      margin-bottom: 32px; // to be combined with grid gap
     }
   }
 
   &__item {
+    // czy zostawić kwadratowe obrazy dla desktop? Czt zachowają elastyczność?
     width: 100%;
     position: relative;
     padding-top: 100%;

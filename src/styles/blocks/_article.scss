@@ -4,15 +4,25 @@
   display: grid;
   grid-template-columns: minmax(280px, 1fr);
   padding-bottom: 40px;
+  aspect-ratio: 1 / 1;
 
   @include for-desktop {
     grid-column: span 4;
+  }
+
+  &--last {
+    padding-bottom: 96px;
+
+    @include for-desktop {
+      padding-bottom: 120px;
+    }
   }
 
   &__item {
     width: 100%;
     position: relative;
     padding-top: 100%;
+
   }
 
   &__picture {
@@ -45,9 +55,5 @@
       content: '\0024';
       padding-right: 3px;
     }
-  }
-
-  &--last {
-    padding-bottom: 96px;
   }
 }

@@ -32,6 +32,7 @@
     @include for-desktop {
       min-height: 460px;
       grid-column: 1 / -1;
+      margin-bottom: 96px;
     }
   }
 
@@ -51,6 +52,7 @@
 
     @include for-desktop {
       grid-column: 1 / -1;
+      padding-bottom: 120px;
     }
   }
 

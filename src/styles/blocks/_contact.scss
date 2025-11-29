@@ -12,6 +12,10 @@
 
   &__title {
     margin-bottom: 48px;
+
+    @include for-desktop {
+      margin-bottom: 32px; // to be combined with grid gap
+    }
   }
 
   &__form {

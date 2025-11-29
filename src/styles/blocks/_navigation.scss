@@ -1,8 +1,14 @@
+@use '../utils/mixins' as *;
+
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 28px 0;
+
+  @include for-desktop {
+    padding: 36px 0;
+  }
 
   &__icons {
     display: flex;
