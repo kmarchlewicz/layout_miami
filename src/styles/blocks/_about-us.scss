@@ -25,13 +25,12 @@
     background-image: url('src/images/sections/about-us.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top -8px;
+    background-position: center;
     min-height: 200px;
     margin-bottom: 48px;
 
     @include for-desktop {
       min-height: 460px;
-      background-position: center bottom -155px;
       grid-column: 1 / -1;
     }
   }
