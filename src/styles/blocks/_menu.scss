@@ -1,4 +1,5 @@
 @use '../utils/mixins' as *;
+@use '../base/colors' as *;
 
 .menu {
   position: fixed;
@@ -7,7 +8,7 @@
   right: 0;
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
-  background-color: #f9f9f9;
+  background-color: $menu-background;
   padding: 0 20px;
   min-height: 100vh;
   align-content: flex-start;
@@ -42,7 +43,7 @@
     line-height: 140%;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #1b2129;
+    color: $text-primary;
     padding-bottom: 16px;
     grid-column: span 2;
 
@@ -59,16 +60,16 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
-    color: #1b2129;
+    color: $text-primary;
     padding-bottom: 4px;
     border-bottom: 1px solid transparent;
 
     &:last-of-type {
-      border-bottom: 1px solid #1b2129;
+      border-bottom: 1px solid $link-border;
     }
 
     &:hover {
-      border-bottom: 1px solid #1b2129;
+      border-bottom: 1px solid $link-border;
     }
   }
 }

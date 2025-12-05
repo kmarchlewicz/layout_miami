@@ -1,4 +1,5 @@
 @use '../utils/mixins' as *;
+@use '../base/colors' as *;
 
 .article {
   display: grid;
@@ -22,7 +23,7 @@
     width: 100%;
     position: relative;
     padding-top: 100%;
-
+    overflow: hidden;
   }
 
   &__picture {
@@ -32,6 +33,8 @@
     top: 0;
     object-fit: cover;
     border-radius: 4px;
+
+    @include image-zoom;
   }
 
   &__description {
@@ -40,7 +43,7 @@
     font-size: 16px;
     line-height: 140%;
     letter-spacing: 0.15px;
-    color: #1b2129;
+    color: $text-primary;
   }
 
   &__price {
@@ -48,7 +51,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 140%;
-    color: #1b2129;
+    color: $text-primary;
     padding-top: 12px;
 
     &::before {

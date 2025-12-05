@@ -1,9 +1,10 @@
 @use '../utils/mixins' as *;
+@use '../base/colors' as *;
 
 .title {
   font-size: 36px;
   font-weight: 700;
-  color: #fff;
+  color: $header-title;
 
   @include for-desktop {
     font-size: 56px;
@@ -14,13 +15,12 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 32px;
-    color: #1b2129;
+    color: $text-primary;
 
     @include for-desktop {
       font-size: 48px;
       line-height: 48px;
     }
-
   }
 
   &--third {
@@ -29,7 +29,7 @@
     font-size: 18px;
     line-height: 140%;
     text-transform: uppercase;
-    color: #1b2129;
+    color: $text-primary;
     padding: 24px 0 8px;
   }
 
@@ -39,7 +39,7 @@
     font-size: 18px;
     line-height: 140%;
     text-transform: uppercase;
-    color: #1b2129;
+    color: $text-primary;
   }
 
   &--fifth {
@@ -47,7 +47,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
-    color: #9393a3;
+    color: $address-title;
     padding-bottom: 8px;
   }
 }

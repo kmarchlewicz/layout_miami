@@ -35,6 +35,7 @@
     width: 100%;
     position: relative;
     padding-top: 100%;
+    overflow: hidden;
 
     @include for-desktop {
       grid-column: span 6;
@@ -48,6 +49,8 @@
     top: 0;
     object-fit: cover;
     border-radius: 4px;
+
+    @include image-zoom;
   }
 
   &__button {

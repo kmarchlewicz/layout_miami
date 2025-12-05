@@ -1,4 +1,5 @@
 @use '../utils/mixins' as *;
+@use '../base/colors' as *;
 
 .contact {
   @include grid;
@@ -37,7 +38,7 @@
     }
 
     &-input {
-      background-color: #f9f9f9;
+      background-color: $form-field-background;
       height: 48px;
       border: 0;
       border-radius: 8px;
@@ -48,27 +49,27 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 140%;
-      color: #1b2129;
+      color: $text-primary;
 
       &::placeholder {
-        color: #7e7e83;
+        color: $form-field-placeholder;
       }
 
       &:hover {
         outline: 1px solid #dbdbdb;
 
         &::placeholder {
-          color: #1b2129;
+          color: $text-primary;
         }
       }
 
       &:focus {
-        outline: 2px solid #f98921;
+        outline: 2px solid $form-focus;
       }
     }
 
     &-textarea {
-      background-color: #f9f9f9;
+      background-color: $form-field-background;
       height: 148px;
       border: 0;
       border-radius: 8px;
@@ -81,26 +82,26 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 140%;
-      color: #1b2129;
+      color: $text-primary;
 
       &::placeholder {
         font-family: Manrope, sans-serif;
         font-weight: 400;
         font-size: 14px;
         letter-spacing: 0.15px;
-        color: #7e7e83;
+        color: $form-field-placeholder;
       }
 
       &:hover {
         outline: 1px solid #dbdbdb;
 
         &::placeholder {
-          color: #1b2129;
+          color: $text-primary;
         }
       }
 
       &:focus {
-        outline: 2px solid #f98921;
+        outline: 2px solid $form-focus;
       }
     }
 
