@@ -1,15 +1,6 @@
 @use '../utils/mixins' as *;
 @use '../base/colors' as *;
 
-@mixin full-width-child {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-}
-
 .about-us {
   @include grid;
 
@@ -21,6 +12,11 @@
   }
 
   @include full-width-child;
+
+  // to hide horizontal scrollbar visible when 100vw is being used
+  @container page (min-width: 320px) {
+    width: 100cqw;
+  }
 
   &__picture {
     background-image: url('src/images/sections/about-us.jpg');
