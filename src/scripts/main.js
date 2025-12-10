@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Blokowanie scrollowania przy widocznym menu - skrypt Mateacademy
+  // Blokowanie scrollowania przy widocznym menu - skrypt Mateacademy.
   window.addEventListener('hashchange', () => {
     if (window.location.hash === '#menu') {
       document.body.classList.add('page--with-menu');
